@@ -97,7 +97,7 @@ export default function SuaGoiTap() {
             <Sliders className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Sửa Hình Thức Tập Của Gói Trên Thẻ</h2>
+            <h2 className="text-sm font-bold text-slate-900">Sửa thông tin gói tập</h2>
             <p className="text-xs text-slate-500">Cho phép cập nhật hình thức tập, bảo toàn nguyên vẹn ngày kích hoạt, ngày hết hạn và số dư</p>
           </div>
         </div>

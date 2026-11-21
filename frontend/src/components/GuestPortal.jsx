@@ -193,7 +193,7 @@ export default function GuestPortal({ onSwitchToConsultation, onOpenLoginModal }
               }`}
             >
               <Calendar className="w-4 h-4" />
-              <span>Đặt Lịch Tư Vấn 30m</span>
+              <span>Đặt Lịch Tư Vấn Trực Tuyến</span>
             </button>
 
             <button

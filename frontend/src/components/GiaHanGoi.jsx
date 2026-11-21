@@ -109,7 +109,7 @@ export default function GiaHanGoi() {
             <RefreshCw className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Gia Hạn Thẻ Tập Theo Kỳ</h2>
+            <h2 className="text-sm font-bold text-slate-900">Gia hạn gói tập</h2>
             <p className="text-xs text-slate-500">Tự động cộng dồn thời hạn, xuất hóa đơn gia hạn và kích hoạt lại thẻ hết hạn</p>
           </div>
         </div>

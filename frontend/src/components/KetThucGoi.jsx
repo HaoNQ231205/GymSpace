@@ -95,7 +95,7 @@ export default function KetThucGoi() {
             <StopCircle className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Kết Thúc Gói Tập Trước Hạn</h2>
+            <h2 className="text-sm font-bold text-slate-900">Kết thúc gói tập</h2>
             <p className="text-xs text-slate-500">Chuyển trạng thái thẻ sang 'Đã kết thúc' và tự động hủy lịch đặt lớp nếu hội viên hết gói</p>
           </div>
         </div>

@@ -21,8 +21,8 @@ import {
 
 const TAB_TITLES = {
   // Cổng Khách Hàng
-  'kh-portal': { title: 'Cổng Khám Phá & Dịch Vụ Khách Hàng', category: 'Trải Nghiệm Khách Hàng', code: 'PORTAL-GUEST' },
-  'tu-van': { title: 'Đặt Lịch Tư Vấn Trực Tuyến 30m', category: 'Tiếp Đón Khách Hàng', code: 'MOD-CONSULT' },
+  'kh-portal': { title: 'Khám Phá Phòng Tập & Bảng Giá Gói Tập', category: 'Cổng Khách Hàng', code: 'PORTAL-GUEST' },
+  'tu-van': { title: 'Đặt lịch tư vấn trực tuyến', category: 'Use Case 1', code: 'UC-01' },
 
   // Cổng Hội Viên
   'the-tap': { title: 'Thẻ Hội Viên & Gói Tập Của Tôi', category: 'Không Gian Hội Viên', code: 'MOD-CARD' },
@@ -30,15 +30,15 @@ const TAB_TITLES = {
   'ho-so': { title: 'Hồ Sơ & Thông Tin Cá Nhân', category: 'Không Gian Hội Viên', code: 'MOD-MY-PROFILE' },
   'hoa-don': { title: 'Lịch Sử Giao Dịch & Hóa Đơn', category: 'Không Gian Hội Viên', code: 'MOD-MY-INVOICE' },
 
-  // Cổng Nhân Viên
-  'ban-goi': { title: 'Bán Gói Tập Trực Tiếp (POS)', category: 'Thu Ngân & Điểm Bán Hàng', code: 'MOD-POS' },
-  'tu-van-admin': { title: 'Quản Lý Sổ Lịch Hẹn Tư Vấn', category: 'Tiếp Đón & Lễ Tân', code: 'MOD-RECEPTION' },
-  'tao-hv': { title: 'Đăng Ký Tài Khoản Hội Viên Mới', category: 'Quản Lý Hội Viên', code: 'MOD-MEMBER' },
-  'sua-tt': { title: 'Quản Lý Hồ Sơ & Sửa Thông Tin', category: 'Hồ Sơ Thành Viên', code: 'MOD-PROFILE' },
-  'gia-han': { title: 'Gia Hạn Thẻ Tập Theo Kỳ', category: 'Quản Trị Thẻ & Hiệu Lực', code: 'MOD-RENEWAL' },
-  'ket-thuc': { title: 'Kết Thúc Gói Tập Trước Hạn', category: 'Điều Chỉnh Hợp Đồng Tập', code: 'MOD-TERMINATE' },
-  'sua-goi': { title: 'Sửa Thông Tin & Hình Thức Gói Tập', category: 'Danh Mục & Tiêu Chuẩn Gói', code: 'MOD-PACKAGE' },
-  'lop-hoc': { title: 'Quản Lý Lớp Học & Sĩ Số Studio', category: 'Studio & Huấn Luyện Viên', code: 'MOD-CLASS' },
+  // Cổng Nhân Viên - Chuẩn hóa chính xác 100% theo tên đặc tả Use Case trong tài liệu
+  'ban-goi': { title: 'Đăng ký trực tiếp – Bán gói tập', category: 'Use Case 2', code: 'UC-02' },
+  'tao-hv': { title: 'Tạo tài khoản hội viên mới', category: 'Use Case 3', code: 'UC-03' },
+  'ket-thuc': { title: 'Kết thúc gói tập', category: 'Use Case 4', code: 'UC-04' },
+  'sua-tt': { title: 'Sửa thông tin khách hàng', category: 'Use Case 5', code: 'UC-05' },
+  'gia-han': { title: 'Gia hạn gói tập', category: 'Use Case 6', code: 'UC-06' },
+  'sua-goi': { title: 'Sửa thông tin gói tập', category: 'Use Case 7', code: 'UC-07' },
+  'tu-van-admin': { title: 'Sổ lịch hẹn tư vấn', category: 'Nghiệp vụ Tiếp đón', code: 'UC-01-ADMIN' },
+  'lop-hoc': { title: 'Lớp học & Đặt chỗ', category: 'Vận hành Studio', code: 'MOD-CLASS' },
 };
 
 export default function App() {

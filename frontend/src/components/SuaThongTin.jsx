@@ -139,7 +139,7 @@ export default function SuaThongTin() {
             <UserCheck className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Quản Lý & Sửa Thông Tin Hồ Sơ</h2>
+            <h2 className="text-sm font-bold text-slate-900">Sửa thông tin khách hàng</h2>
             <p className="text-xs text-slate-500">Khóa mã định danh, kiểm tra Regex 10 số và cập nhật thông tin đồng bộ</p>
           </div>
         </div>

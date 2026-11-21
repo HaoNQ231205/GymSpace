@@ -188,7 +188,7 @@ export default function BanGoiTap({ initialCustomer, onGoToCreateMember, onGoToR
             <ShoppingCart className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Quầy Bán Gói & Lập Hóa Đơn (POS)</h2>
+            <h2 className="text-sm font-bold text-slate-900">Đăng ký trực tiếp – Bán gói tập</h2>
             <p className="text-xs text-slate-500">Phục vụ Khách hàng mới sau tư vấn và Hội viên cũ mua thêm gói tập</p>
           </div>
         </div>

@@ -123,7 +123,7 @@ export default function TaoTaiKhoan({ prefillData, onClearPrefill }) {
             <UserPlus className="w-5 h-5" />
           </div>
           <div>
-            <h2 className="text-sm font-bold text-slate-900">Đăng Ký Hồ Sơ & Tạo Tài Khoản Hội Viên</h2>
+            <h2 className="text-sm font-bold text-slate-900">Tạo tài khoản hội viên mới</h2>
             <p className="text-xs text-slate-500">Tự động phát sinh mã HV, mã hóa mật khẩu và liên kết CSDL KhachHang</p>
           </div>
         </div>

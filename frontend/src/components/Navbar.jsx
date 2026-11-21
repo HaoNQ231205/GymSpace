@@ -25,8 +25,8 @@ export default function Navbar({
       {
         group: 'Cổng Khách Hàng',
         items: [
-          { id: 'kh-portal', label: 'Khám Phá Gym & Gói Tập', icon: Sparkles, badge: 'Chi Tiết' },
-          { id: 'tu-van', label: 'Đặt Lịch Tư Vấn Trực Tuyến', icon: Calendar, badge: '30m' },
+          { id: 'kh-portal', label: 'Khám Phá Gym & Gói Tập', icon: Sparkles, badge: 'Dịch vụ' },
+          { id: 'tu-van', label: 'Đặt lịch tư vấn trực tuyến', icon: Calendar, badge: '30m' },
         ]
       }
     ],
@@ -43,21 +43,21 @@ export default function Navbar({
     ],
     'nhan-vien': [
       {
-        group: 'Tiếp đón & Bán hàng',
+        group: 'Nghiệp Vụ Bán Hàng & Tiếp Đón',
         items: [
-          { id: 'ban-goi', label: 'Bán Gói Tập (POS)', icon: ShoppingCart, badge: 'POS' },
-          { id: 'tu-van-admin', label: 'Quản Lý Sổ Lịch Hẹn', icon: Calendar, badge: 'Sổ hẹn' },
-          { id: 'tao-hv', label: 'Tạo Tài Khoản Hội Viên', icon: UserPlus, badge: 'Mới' },
-          { id: 'sua-tt', label: 'Hồ Sơ & Sửa Thông Tin', icon: UserCheck, badge: 'Hồ sơ' }
+          { id: 'ban-goi', label: 'Đăng ký trực tiếp – Bán gói tập', icon: ShoppingCart, badge: 'POS' },
+          { id: 'tao-hv', label: 'Tạo tài khoản hội viên mới', icon: UserPlus, badge: 'Mới' },
+          { id: 'sua-tt', label: 'Sửa thông tin khách hàng', icon: UserCheck, badge: 'Hồ sơ' },
+          { id: 'tu-van-admin', label: 'Sổ lịch hẹn tư vấn', icon: Calendar, badge: 'Lịch hẹn' }
         ]
       },
       {
-        group: 'Vận hành Thẻ & Lớp',
+        group: 'Quản Trị Gói Tập & Thẻ',
         items: [
-          { id: 'gia-han', label: 'Gia Hạn Thẻ Tập', icon: RefreshCw, badge: 'Kỳ' },
-          { id: 'ket-thuc', label: 'Kết Thúc Gói Tập', icon: StopCircle, badge: 'Hủy' },
-          { id: 'sua-goi', label: 'Sửa Hình Thức Gói', icon: Sliders, badge: 'Gói' },
-          { id: 'lop-hoc', label: 'Lớp Học & Đặt Chỗ', icon: BookOpen, badge: 'Lớp' }
+          { id: 'gia-han', label: 'Gia hạn gói tập', icon: RefreshCw, badge: 'Gia hạn' },
+          { id: 'ket-thuc', label: 'Kết thúc gói tập', icon: StopCircle, badge: 'Kết thúc' },
+          { id: 'sua-goi', label: 'Sửa thông tin gói tập', icon: Sliders, badge: 'Sửa gói' },
+          { id: 'lop-hoc', label: 'Lớp học & Đặt chỗ', icon: BookOpen, badge: 'Lớp' }
         ]
       }
     ]
