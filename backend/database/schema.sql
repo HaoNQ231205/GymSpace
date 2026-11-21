@@ -118,16 +118,3 @@ CREATE TABLE IF NOT EXISTS DatCho (
     FOREIGN KEY (maLop) REFERENCES LopHoc(maLop) ON DELETE CASCADE,
     FOREIGN KEY (maHoiVien) REFERENCES HoiVien(maHoiVien) ON DELETE CASCADE
 );
-
--- 11. Bảng LichSuLog (Nhật ký kiểm soát thay đổi hệ thống)
-CREATE TABLE IF NOT EXISTS LichSuLog (
-    maLog VARCHAR(20) PRIMARY KEY,
-    maNhanVien VARCHAR(10) NOT NULL,
-    maHoiVien VARCHAR(20),
-    thoiGian DATETIME NOT NULL,
-    hanhDong NVARCHAR(100) NOT NULL,
-    truongThayDoi NVARCHAR(100),
-    giaTriCu NVARCHAR(255),
-    giaTriMoi NVARCHAR(255),
-    FOREIGN KEY (maNhanVien) REFERENCES NhanVien(maNhanVien) ON DELETE RESTRICT
-);

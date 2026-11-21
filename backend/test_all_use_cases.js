@@ -11,7 +11,6 @@ const ClsHoaDon = require('./models/ClsHoaDon');
 const ClsChiTietHoaDon = require('./models/ClsChiTietHoaDon');
 const ClsLopHoc = require('./models/ClsLopHoc');
 const ClsDatCho = require('./models/ClsDatCho');
-const ClsLichSuLog = require('./models/ClsLichSuLog');
 
 console.log('====================================================');
 console.log('🧪 BẮT ĐẦU KIỂM THỬ TOÀN DIỆN CÁC LỚP & CHỨC NĂNG');
@@ -70,7 +69,7 @@ const newMember = ClsHoiVien.luuHoiVienMoi({
 console.log(`Tạo hội viên mới thành công: ${newMember.hoTen} (${newMember.maHoiVien})`);
 
 // 5. Test Sửa thông tin hội viên (Use Case 4)
-console.log('\n--- 5. Kiểm tra Use Case 4: Sửa thông tin hội viên (LOG9913) ---');
+console.log('\n--- 5. Kiểm tra Use Case 4: Sửa thông tin hội viên ---');
 const updatedHv = ClsHoiVien.capNhatThongTin('HV002', 'Hội Viên 02', '0987654321');
 console.log(`Cập nhật thành công HV002: Họ tên = ${updatedHv.hoTen}, SĐT = ${updatedHv.soDienThoai}`);
 
@@ -101,12 +100,6 @@ console.log('\n--- 9. Kiểm tra Lớp học & Đặt chỗ ---');
 const classes = ClsLopHoc.layDanhSach();
 console.log(`Số lượng lớp học: ${classes.length}`);
 console.log(`Trùng lịch phòng Studio Yoga 1 ca 08:30 ngày 2026-11-28?`, ClsLopHoc.kiemTraTrungLichPhong('Studio Yoga 1', '2026-11-28', '08:30', '09:00'));
-
-// 10. Test LichSuLog
-console.log('\n--- 10. Kiểm tra Bảng LichSuLog ---');
-const logs = ClsLichSuLog.layLichSu(5);
-console.log(`Số bản ghi log gần nhất: ${logs.length}`);
-logs.forEach(l => console.log(` - [${l.thoiGian}] NV: ${l.maNhanVien} | Hành động: ${l.hanhDong} | Đối tượng: ${l.maHoiVien}`));
 
 console.log('\n====================================================');
 console.log('✅ TẤT CẢ CÁC HÀM, CLASS, TRUY VẤN ĐỀU CHẠY HOÀN HẢO!');

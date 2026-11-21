@@ -65,8 +65,3 @@ INSERT OR IGNORE INTO DatCho (maDatCho, maLop, maHoiVien, trangThaiDat) VALUES
 ('DC002', 'LOP01', 'HV003', 'Đã đặt'),
 ('DC003', 'LOP02', 'HV001', 'Đã đặt'),
 ('DC004', 'LOP03', 'HV001', 'Đã đặt');
-
--- 11. Nhật ký hoạt động (Activity Log)
-INSERT OR IGNORE INTO LichSuLog (maLog, maNhanVien, maHoiVien, thoiGian, hanhDong, truongThayDoi, giaTriCu, giaTriMoi) VALUES
-('LOG0001', 'NV005', 'HV001', '2026-11-01 09:35:00', 'Đăng ký trực tiếp & Cấp thẻ mới', 'TheHoiVien', 'Chưa có thẻ', 'Mã thẻ THE-2939; Gói G01'),
-('LOG0002', 'NV005', 'HV002', '2026-11-15 16:20:00', 'Sửa thông tin hội viên', 'hoTen, soDienThoai', 'Họ tên: Trần Văn B; SĐT: 0912000111', 'Họ tên: Trần Văn Bình; SĐT: 0987654321');
