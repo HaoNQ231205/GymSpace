@@ -6,12 +6,10 @@
 -- 1. Bảng NhanVien (Nhân viên phòng tập)
 CREATE TABLE IF NOT EXISTS NhanVien (
     maNhanVien VARCHAR(10) PRIMARY KEY,
-    hoTen NVARCHAR(100) NOT NULL,
+    hoTen VARCHAR(100) NOT NULL,
     tenDangNhap VARCHAR(50) UNIQUE NOT NULL,
     matKhau VARCHAR(255) NOT NULL,
-    soDienThoai VARCHAR(15),
-    email VARCHAR(100),
-    vaiTro NVARCHAR(20) NOT NULL
+    vaiTro VARCHAR(20) NOT NULL
 );
 
 -- 2. Bảng KhachHang (Khách hàng tiềm năng & thông tin cá nhân)

@@ -6,15 +6,13 @@ class ClsNhanVien {
         this.hoTen = data.hoTen || '';
         this.tenDangNhap = data.tenDangNhap || '';
         this.matKhau = data.matKhau || '';
-        this.soDienThoai = data.soDienThoai || '';
-        this.email = data.email || '';
         this.vaiTro = data.vaiTro || 'Nhân viên';
     }
 
     // Đăng nhập hệ thống của nhân viên
     static dangNhap(tenDangNhap, matKhau) {
         const stmt = db.prepare(`
-            SELECT maNhanVien, hoTen, tenDangNhap, soDienThoai, email, vaiTro
+            SELECT maNhanVien, hoTen, tenDangNhap, vaiTro
             FROM NhanVien
             WHERE tenDangNhap = ? AND matKhau = ?;
         `);
@@ -24,7 +22,7 @@ class ClsNhanVien {
     // Lấy thông tin nhân viên theo mã
     static layThongTin(maNhanVien) {
         const stmt = db.prepare(`
-            SELECT maNhanVien, hoTen, tenDangNhap, soDienThoai, email, vaiTro
+            SELECT maNhanVien, hoTen, tenDangNhap, vaiTro
             FROM NhanVien
             WHERE maNhanVien = ?;
         `);
@@ -34,7 +32,7 @@ class ClsNhanVien {
     // Lấy danh sách nhân viên
     static layDanhSach() {
         const stmt = db.prepare(`
-            SELECT maNhanVien, hoTen, tenDangNhap, soDienThoai, email, vaiTro
+            SELECT maNhanVien, hoTen, tenDangNhap, vaiTro
             FROM NhanVien
             ORDER BY maNhanVien ASC;
         `);

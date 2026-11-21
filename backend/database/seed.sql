@@ -3,10 +3,10 @@
 -- ====================================================================
 
 -- 1. Nhân viên (Mã NV001, NV005, NV009 theo vai trò đại diện)
-INSERT OR IGNORE INTO NhanVien (maNhanVien, hoTen, tenDangNhap, matKhau, soDienThoai, email, vaiTro) VALUES
-('NV001', 'Quản Lý Chi Nhánh', 'admin', '123456', '0901234567', 'admin@gymspace.vn', 'Quản lý'),
-('NV005', 'Nhân Viên Lễ Tân', 'nv005', '123456', '0912345005', 'letan@gymspace.vn', 'Nhân viên lễ tân'),
-('NV009', 'Nhân Viên Tư Vấn', 'nvcuong', '123456', '0988776655', 'tuvan@gymspace.vn', 'Nhân viên tư vấn');
+INSERT OR IGNORE INTO NhanVien (maNhanVien, hoTen, tenDangNhap, matKhau, vaiTro) VALUES
+('NV001', 'Quản Lý Chi Nhánh', 'admin', '123456', 'Quản lý'),
+('NV005', 'Nhân Viên Lễ Tân', 'nv005', '123456', 'Nhân viên lễ tân'),
+('NV009', 'Nhân Viên Tư Vấn', 'nvcuong', '123456', 'Nhân viên tư vấn');
 
 -- 2. Khách hàng (Đại diện)
 INSERT OR IGNORE INTO KhachHang (maKhachHang, hoTen, soDienThoai, email, noiDungTraoDoi, ngaySinh, gioiTinh) VALUES

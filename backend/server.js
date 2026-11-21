@@ -44,7 +44,7 @@ app.post('/api/auth/login', (req, res) => {
 
         // 1. Kiểm tra tài khoản Nhân viên
         const nv = db.prepare(`
-            SELECT maNhanVien, hoTen, tenDangNhap, vaiTro, soDienThoai, email
+            SELECT maNhanVien, hoTen, tenDangNhap, vaiTro
             FROM NhanVien
             WHERE (tenDangNhap = ? OR maNhanVien = ?) AND matKhau = ?;
         `).get(username, username, password);
