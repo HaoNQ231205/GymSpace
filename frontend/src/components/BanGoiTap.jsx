@@ -219,7 +219,6 @@ export default function BanGoiTap({ initialCustomer, onGoToCreateMember, onGoToR
                 <User className="w-4 h-4 text-blue-600" />
                 <span>1. Chọn Đối Tượng Mua Gói</span>
               </h3>
-              <span className="text-[11px] text-slate-400 font-medium">Use Case Phân Luồng Nghiệp Vụ</span>
             </div>
 
             {/* Buyer Mode Switcher */}
@@ -254,15 +253,6 @@ export default function BanGoiTap({ initialCustomer, onGoToCreateMember, onGoToR
             {/* CASE A: KHÁCH HÀNG MỚI */}
             {buyerMode === 'new_customer' && (
               <div className="space-y-4 pt-1">
-                <div className="bg-blue-50/70 border border-blue-200 rounded-xl p-3 text-xs text-blue-900 space-y-1">
-                  <div className="flex items-center gap-1.5 font-bold text-blue-800">
-                    <Sparkles className="w-3.5 h-3.5 text-orange-500" />
-                    <span>Quy trình Use Case 2: Đăng ký trực tiếp - Bán gói tập</span>
-                  </div>
-                  <p className="text-[11px] text-blue-700 leading-relaxed">
-                    Khách hàng mua gói trực tiếp hoặc sau khi đặt lịch tư vấn. Nhân viên thu tiền lập Hóa đơn trước, ngay sau khi thanh toán thành công hệ thống sẽ chuyển sang màn hình Tạo Tài Khoản Hội Viên để cấp thẻ tập.
-                  </p>
-                </div>
 
                 {/* Quick Select from Consultation appointments if available */}
                 {consultations.length > 0 && (
@@ -668,7 +658,7 @@ export default function BanGoiTap({ initialCustomer, onGoToCreateMember, onGoToR
                   <span>Bước tiếp theo: Cấp tài khoản hội viên và kích hoạt thẻ</span>
                 </div>
                 <p className="text-emerald-800 text-[11px] leading-relaxed">
-                  Hóa đơn <strong className="font-mono">{receipt.maHoaDon}</strong> đã được lưu thành công. Theo đúng kịch bản Use Case 2, hệ thống sẽ chuyển sang giao diện tạo tài khoản để hoàn tất cấp thẻ hội viên cho khách hàng <strong>{receipt.customerData.hoTen}</strong>.
+                  Hóa đơn <strong className="font-mono">{receipt.maHoaDon}</strong> đã được lưu thành công. Nhấn nút bên dưới để chuyển sang giao diện tạo tài khoản và kích hoạt thẻ cho khách hàng <strong>{receipt.customerData.hoTen}</strong>.
                 </p>
               </div>
             )}

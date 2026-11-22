@@ -22,7 +22,7 @@ import {
 const TAB_TITLES = {
   // Cổng Khách Hàng
   'kh-portal': { title: 'Khám Phá Phòng Tập & Bảng Giá Gói Tập', category: 'Cổng Khách Hàng', code: 'PORTAL-GUEST' },
-  'tu-van': { title: 'Đặt lịch tư vấn trực tuyến', category: 'Use Case 1', code: 'UC-01' },
+  'tu-van': { title: 'Đặt lịch tư vấn trực tuyến', category: 'Đặt Lịch Trực Tuyến', code: 'UC-01' },
 
   // Cổng Hội Viên
   'the-tap': { title: 'Thẻ Hội Viên & Gói Tập Của Tôi', category: 'Không Gian Hội Viên', code: 'MOD-CARD' },
@@ -30,15 +30,15 @@ const TAB_TITLES = {
   'ho-so': { title: 'Hồ Sơ & Thông Tin Cá Nhân', category: 'Không Gian Hội Viên', code: 'MOD-MY-PROFILE' },
   'hoa-don': { title: 'Lịch Sử Giao Dịch & Hóa Đơn', category: 'Không Gian Hội Viên', code: 'MOD-MY-INVOICE' },
 
-  // Cổng Nhân Viên - Chuẩn hóa chính xác 100% theo tên đặc tả Use Case trong tài liệu
-  'ban-goi': { title: 'Đăng ký trực tiếp – Bán gói tập', category: 'Use Case 2', code: 'UC-02' },
-  'tao-hv': { title: 'Tạo tài khoản hội viên mới', category: 'Use Case 3', code: 'UC-03' },
-  'ket-thuc': { title: 'Kết thúc gói tập', category: 'Use Case 4', code: 'UC-04' },
-  'sua-tt': { title: 'Sửa thông tin khách hàng', category: 'Use Case 5', code: 'UC-05' },
-  'gia-han': { title: 'Gia hạn gói tập', category: 'Use Case 6', code: 'UC-06' },
-  'sua-goi': { title: 'Sửa thông tin gói tập', category: 'Use Case 7', code: 'UC-07' },
-  'tu-van-admin': { title: 'Sổ lịch hẹn tư vấn', category: 'Nghiệp vụ Tiếp đón', code: 'UC-01-ADMIN' },
-  'lop-hoc': { title: 'Lớp học & Đặt chỗ', category: 'Vận hành Studio', code: 'MOD-CLASS' },
+  // Cổng Nhân Viên
+  'ban-goi': { title: 'Đăng ký trực tiếp – Bán gói tập', category: 'Quản Lý Bán Hàng', code: 'UC-02' },
+  'tao-hv': { title: 'Tạo tài khoản hội viên mới', category: 'Quản Lý Hội Viên', code: 'UC-03' },
+  'ket-thuc': { title: 'Kết thúc gói tập', category: 'Quản Trị Thẻ Tập', code: 'UC-04' },
+  'sua-tt': { title: 'Sửa thông tin khách hàng', category: 'Hồ Sơ Khách Hàng', code: 'UC-05' },
+  'gia-han': { title: 'Gia hạn gói tập', category: 'Gia Hạn Thẻ Tập', code: 'UC-06' },
+  'sua-goi': { title: 'Sửa thông tin gói tập', category: 'Cấu Hình Gói Tập', code: 'UC-07' },
+  'tu-van-admin': { title: 'Sổ lịch hẹn tư vấn', category: 'Tiếp Đón Khách Hàng', code: 'UC-01-ADMIN' },
+  'lop-hoc': { title: 'Lớp học & Đặt chỗ', category: 'Vận Hành Studio', code: 'MOD-CLASS' },
 };
 
 export default function App() {
