@@ -3,7 +3,7 @@ import { api } from '../services/api';
 import { 
   Dumbbell, Lock, User, ArrowRight, ShieldCheck, 
   Sparkles, CheckCircle2, AlertCircle, Eye, EyeOff,
-  UserCheck, Building, KeyRound
+  KeyRound
 } from 'lucide-react';
 
 export default function LoginModal({ isOpen, onClose, onLoginSuccess }) {
@@ -32,24 +32,6 @@ export default function LoginModal({ isOpen, onClose, onLoginSuccess }) {
       }
     } catch (err) {
       setErrorMsg(err.message || 'Tên đăng nhập hoặc mật khẩu không chính xác!');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleQuickLogin = async (username, password) => {
-    setTenDangNhap(username);
-    setMatKhau(password);
-    setLoading(true);
-    setErrorMsg(null);
-    try {
-      const res = await api.login(username, password);
-      if (res.success) {
-        onLoginSuccess(res.user);
-        if (onClose) onClose();
-      }
-    } catch (err) {
-      setErrorMsg(err.message || 'Đăng nhập không thành công');
     } finally {
       setLoading(false);
     }
@@ -167,41 +149,6 @@ export default function LoginModal({ isOpen, onClose, onLoginSuccess }) {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </button>
           </form>
-
-          {/* Quick-fill Demo Presets */}
-          <div className="pt-2 border-t border-slate-100">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">
-              ⚡ Tài Khoản Mẫu Kiểm Thử Nhanh (1 Click):
-            </p>
-
-            <div className="grid grid-cols-2 gap-2 text-xs">
-              <button
-                type="button"
-                onClick={() => handleQuickLogin('nv005', '123456')}
-                className="p-2.5 bg-indigo-50/70 hover:bg-indigo-100 text-indigo-900 border border-indigo-200/70 rounded-xl text-left transition flex flex-col"
-              >
-                <div className="flex items-center gap-1.5 font-bold text-[11px] text-indigo-800">
-                  <Building className="w-3.5 h-3.5 text-indigo-600" />
-                  <span>Nhân Viên</span>
-                </div>
-                <span className="text-[10px] text-slate-500 font-mono mt-0.5">nv005 / 123456</span>
-                <span className="text-[10px] text-indigo-700 font-semibold truncate">Nhân Viên Lễ Tân (NV005)</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => handleQuickLogin('nguyenan', '123456')}
-                className="p-2.5 bg-orange-50/70 hover:bg-orange-100 text-orange-900 border border-orange-200/70 rounded-xl text-left transition flex flex-col"
-              >
-                <div className="flex items-center gap-1.5 font-bold text-[11px] text-orange-800">
-                  <UserCheck className="w-3.5 h-3.5 text-orange-600" />
-                  <span>Hội Viên</span>
-                </div>
-                <span className="text-[10px] text-slate-500 font-mono mt-0.5">nguyenan / 123456</span>
-                <span className="text-[10px] text-orange-700 font-semibold truncate">Hội Viên Tiêu Biểu (HV001)</span>
-              </button>
-            </div>
-          </div>
 
           {/* Public Guest Access Button */}
           <div className="pt-1">
