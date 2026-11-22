@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Calendar, ShoppingCart, UserPlus, UserCheck, 
-  RefreshCw, StopCircle, Sliders, BookOpen, History,
+  RefreshCw, StopCircle, Sliders, History,
   Activity, ShieldCheck, ChevronRight, Menu, X, Dumbbell,
   Clock, CheckCircle2, TrendingUp, Users, User, CreditCard,
   FileText, Sparkles, UserCog, HeartHandshake, LogOut, LogIn
@@ -56,8 +56,7 @@ export default function Navbar({
         items: [
           { id: 'gia-han', label: 'Gia hạn gói tập', icon: RefreshCw, badge: 'Gia hạn' },
           { id: 'ket-thuc', label: 'Kết thúc gói tập', icon: StopCircle, badge: 'Kết thúc' },
-          { id: 'sua-goi', label: 'Sửa thông tin gói tập', icon: Sliders, badge: 'Sửa gói' },
-          { id: 'lop-hoc', label: 'Lớp học & Đặt chỗ', icon: BookOpen, badge: 'Lớp' }
+          { id: 'sua-goi', label: 'Sửa thông tin gói tập', icon: Sliders, badge: 'Sửa gói' }
         ]
       }
     ]
